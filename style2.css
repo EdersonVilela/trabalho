@@ -1,0 +1,100 @@
+/* style.css - Estilos exclusivos para a página de Portfólio */
+/* Autor: Ederson Vilela */
+/* Este CSS define o layout dos projetos e a aparência geral da página */
+
+/* Reset padrão para evitar margens e paddings indesejados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração geral do corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f6f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Menu de navegação fixo em todas as páginas */
+nav {
+  background-color: #222;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+/* Container principal com sombra e arredondamento */
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Título da página */
+h1 {
+  color: #004466;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Lista de projetos */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #e9f1f7;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-left: 5px solid #0077cc;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+/* Animação de destaque ao passar o mouse */
+ul li:hover {
+  transform: scale(1.02);
+}
+
+/* Links dos projetos */
+ul li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para telas pequenas (responsivo) */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+}

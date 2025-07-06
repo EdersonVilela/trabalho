@@ -1,0 +1,105 @@
+/* style.css - Estilos exclusivos para a página de Contato */
+/* Autor: Ederson Vilela */
+/* Este arquivo estiliza o formulário e o layout da página de contato */
+
+/* Reset básico para remover margens e bordas padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9f0f7;
+  color: #333;
+}
+
+/* Estilo do menu de navegação */
+nav {
+  background-color: #003366;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #66ccff;
+}
+
+/* Container centralizado com sombra e fundo branco */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Título principal da página */
+h1 {
+  margin-bottom: 25px;
+  color: #003366;
+  text-align: center;
+}
+
+/* Estilização dos campos do formulário */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+/* Estilo do botão de envio */
+form button {
+  background-color: #003366;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005199;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
